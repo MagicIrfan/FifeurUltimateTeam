@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="home.js"></script></head>
+    <body>
+        <div class="title">
+            <h1>FIFEUR ULTIMATE TEAM</h1>
+        </div>
+        <div class="container">
+            <div class="search-player-container">
+                <form id="search-player" method="post">
+                    <div class="input-element">
+                        <label for="post-select">Poste</label>
+                        <select name="post" data-placeholder="Choisir un poste" id="post-select">
+                            <option value="">Choisir un poste</option>
+                        </select>
+                    </div>
+                    <div class="input-element">
+                        <label for="club-select">Club</label>
+                        <select name="club" data-placeholder="Choisir un club" id="club-select">
+                            <option value="">Choisir un club</option>
+                        </select>
+                    </div>
+                    <div class="input-element">
+                        <label for="nationality-select">Nationalite</label>
+                        <select name="country" data-placeholder="Choisir la nationalité" id="nationality-select">
+                            <option value="">Choisir la nationalité</option>
+                        </select>
+                    </div>
+                    <div class="input-element">
+                        <label for="pace-select">Vitesse</label>
+                        <div class="input-check">
+                            <button type="button" class="input-btn minus1">-</button>
+                            <input class="input-stat" id="pace-select" name="pace" type="number" value="0" min="0" max="99"/>
+                            <button type="button" class="input-btn add1">+</button>
+                            <div class="check-container">
+                                <input type="checkbox" id="pace-check" name="pace-check"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-element">
+                        <label for="shoot-select">Tir</label>
+                        <div class="input-check">
+                            <button type="button" class="input-btn minus1">-</button>
+                            <input class="input-stat" id="shoot-select" name="shoot" type="number" value="0" min="0" max="99"/>
+                            <button type="button" class="input-btn add1">+</button>
+                            <div class="check-container">
+                                <input type="checkbox" id="shoot-check" name="shoot-check"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-element">
+                        <label for="passing-select">Passe</label>
+                        <div class="input-check">
+                            <button type="button" class="input-btn minus1">-</button>
+                            <input class="input-stat" id="passing-select" name="passing" type="number" value="0" min="0" max="99"/>
+                            <button type="button" class="input-btn add1">+</button>
+                            <div class="check-container">
+                                <input type="checkbox" id="passing-check" name="passing-check"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-element">
+                        <label for="dribble-select">Dribble</label>
+                        <div class="input-check">
+                            <button type="button" class="input-btn minus1">-</button>
+                            <input class="input-stat" id="dribble-select" name="dribble" type="number" value="0" min="0" max="99"/>
+                            <button type="button" class="input-btn add1">+</button>
+                            <div class="check-container">
+                                <input type="checkbox" id="dribble-check" name="dribble-check"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-element">
+                        <label for="defense-select">Défense</label>
+                        <div class="input-check">
+                            <button type="button" class="input-btn minus1">-</button>
+                            <input class="input-stat" id="defense-select" name="defense" type="number" value="0" min="0" max="99"/>
+                            <button type="button" class="input-btn add1">+</button>
+                            <div class="check-container">
+                                <input type="checkbox" id="defense-check" name="defense-check"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-element">
+                        <label for="physical-select">Endurance</label>
+                        <div class="input-check">
+                            <button type="button" class="input-btn minus1">-</button>
+                            <input class="input-stat" id="physical-select" name="physical" type="number" value="0" min="0" max="99"/>
+                            <button type="button" class="input-btn add1">+</button>
+                            <div class="check-container">
+                                <input type="checkbox" id="physical-check" name="physical-check"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-container">
+                        <input type="button" class="button" value="Soumettre"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

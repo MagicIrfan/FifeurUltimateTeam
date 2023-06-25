@@ -1,0 +1,1820 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gaeta/ontologies/2023/foot#"
+     xml:base="http://www.semanticweb.org/gaeta/ontologies/2023/foot"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foot="http://www.semanticweb.org/gaeta/ontologies/2023/foot#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#ChampionnatHasClub -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#ChampionnatHasClub">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#ClubHasChampionnat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Championnat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Club"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#ClubHasChampionnat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#ClubHasChampionnat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Club"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Championnat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#ClubHasPerson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#ClubHasPerson">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PersonHasClub"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Club"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Personne"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#HasNationality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#HasNationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#PersonHasClub -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PersonHasClub">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Club"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#PlayerHasPost -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PlayerHasPost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#playerHasStrongFoot -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#playerHasStrongFoot">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PiedFort"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#URLImage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#URLImage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#alias -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#alias">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#gestesTechniques -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#gestesTechniques">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#initiales -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#initiales">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#mauvaisPied -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#mauvaisPied">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#statDefense -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#statDefense">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#statDribble -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#statDribble">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#statEndurance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#statEndurance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#statGeneral -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#statGeneral">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#statPasse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#statPasse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#statTir -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#statTir">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#statVitesse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#statVitesse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Attaque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Attaque">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Championnat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Championnat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Club -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Club"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Defense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Defense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#JoueurDefensif -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#JoueurDefensif">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PlayerHasPost"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Defense"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:comment>Joueur jouant en défense ou gardien</rdfs:comment>
+        <rdfs:label>Joueur défensif</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#JoueurMilieu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#JoueurMilieu">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PlayerHasPost"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Milieu"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:comment>Joueur jouant au milieu de terrain</rdfs:comment>
+        <rdfs:label>Joueur au milieu de terrain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#JoueurOffensif -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#JoueurOffensif">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PlayerHasPost"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Attaque"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <rdfs:comment>Joueur jouant en attaque</rdfs:comment>
+        <rdfs:label>Joueur offensif</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Milieu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Milieu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#PiedFort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PiedFort">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gauche"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Achraf_Hakimi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Achraf_Hakimi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Maroc"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_D"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/235/212/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</age>
+        <alias>Hakimi</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99</statVitesse>
+        <rdfs:label>Achraf Hakimi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Amir_Richardson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Amir_Richardson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gauche"/>
+        <URLImage>https://cdn.sofifa.net/players/262/236/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</age>
+        <alias>Richardson</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">62</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">54</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</statVitesse>
+        <rdfs:label>Amir Richardson</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Argentine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Argentine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+        <URLImage>https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1280px-Flag_of_Argentina.svg.png</URLImage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Arthur_Desmas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Arthur_Desmas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#gardien"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/229/542/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</age>
+        <alias>Desmas</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71</statVitesse>
+        <rdfs:label>Arthur Desmas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bordeaux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bordeaux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Club"/>
+        <ClubHasChampionnat rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#League_2"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Clement_Michelin"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gaetan_Poussin"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Logan_Delaurier-Chaubet"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Malcom_Bokele"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Marvin_De_Lima"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Stian_Gregersen"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Tom_Lacoux"/>
+        <URLImage>https://upload.wikimedia.org/wikipedia/fr/thumb/7/76/Logo_des_Girondins_de_Bordeaux.svg/1200px-Logo_des_Girondins_de_Bordeaux.svg.png</URLImage>
+        <rdfs:label>Bordeaux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bresil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bresil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+        <URLImage>https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/langfr-225px-Flag_of_Brazil.svg.png</URLImage>
+        <rdfs:label>Brésil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Cengiz_Under -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Cengiz_Under">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Maroc"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_D"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gauche"/>
+        <URLImage>https://cdn.sofifa.net/players/235/889/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</age>
+        <alias>Under</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</gestesTechniques>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</mauvaisPied>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">52</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78</statVitesse>
+        <rdfs:label>Cengiz Under</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Chancel_Mbemba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Chancel_Mbemba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Congo"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/210/897/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</age>
+        <alias>Mbemba</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">57</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statVitesse>
+        <rdfs:label>Mbemba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Check-Oumar_Diakite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Check-Oumar_Diakite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/259/674/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</age>
+        <alias>Diakite</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">62</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69</statVitesse>
+        <rdfs:label>Check-Oumar Diakite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Christopher_Operi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Christopher_Operi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Ivoire"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_G"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gauche"/>
+        <URLImage>https://cdn.sofifa.net/players/236/629/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</age>
+        <alias>Operi</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">52</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">76</statVitesse>
+        <rdfs:label>Christopher Operi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Clement_Michelin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Clement_Michelin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bordeaux"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_D"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/236/466/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26</age>
+        <alias>Michelin</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</statVitesse>
+        <rdfs:label>Clement Michelin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Congo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Congo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+        <URLImage>https://www.larousse.fr/encyclopedie/data/images/1009647-Drapeau_de_la_R%C3%A9publique_d%C3%A9mocratique_du_Congo.jpg</URLImage>
+        <rdfs:label>Congo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Danilo_Pereira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Danilo_Pereira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Portugal"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_defensif_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/200/888/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31</age>
+        <alias>Danilo Pereira</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</statVitesse>
+        <rdfs:label>Danilo Pereira</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PiedFort"/>
+        <rdfs:label>Droit</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Eric_Bailly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Eric_Bailly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Ivoire"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/225/508/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29</age>
+        <alias>Bailly</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83</statVitesse>
+        <rdfs:label>Eric Bailly</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Espagne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Espagne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+        <URLImage>https://img.freepik.com/vecteurs-libre/illustration-du-drapeau-espagne_53876-18168.jpg</URLImage>
+        <rdfs:label>Espagne</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+        <URLImage>https://static.vecteezy.com/ti/vecteur-libre/p3/2417841-illustrationle-du-drapeau-france-gratuit-vectoriel.jpg</URLImage>
+        <rdfs:label>France</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gaetan_Poussin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gaetan_Poussin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bordeaux"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#gardien"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/240/751/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</age>
+        <alias>Poussin</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68</statVitesse>
+        <rdfs:label>Gaetan poussin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gauche -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gauche">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PiedFort"/>
+        <rdfs:label>Gauche</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gautier_Lloris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gautier_Lloris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gauche"/>
+        <URLImage>https://cdn.sofifa.net/players/222/286/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26</age>
+        <alias>Lloris</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">54</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">49</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42</statVitesse>
+        <rdfs:label>Gautier Lloris</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gianluigi_Donnarumma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gianluigi_Donnarumma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Italie"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#gardien"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/230/621/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</age>
+        <alias>Donnarumma</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">82</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">86</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92</statVitesse>
+        <rdfs:label>Gianluigi Donnarumma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Italie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Italie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+        <URLImage>https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Italy_%282003%E2%80%932006%29.svg/220px-Flag_of_Italy_%282003%E2%80%932006%29.svg.png</URLImage>
+        <rdfs:label>Italie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Ivoire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Ivoire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+        <URLImage>https://www.larousse.fr/encyclopedie/data/images/1009652-Drapeau_de_la_C%C3%B4te_dIvoire.jpg</URLImage>
+        <rdfs:label>Côte d&apos;Ivoire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Jonathan_Clauss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Jonathan_Clauss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_lateral_D"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/239/093/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</age>
+        <alias>Clauss</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</gestesTechniques>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</mauvaisPied>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">93</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98</statVitesse>
+        <rdfs:label>Jonathan Clauss</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Jordan_Veretout -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Jordan_Veretout">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_defensif_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/201/519/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</age>
+        <alias>Veretout</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">76</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77</statVitesse>
+        <rdfs:label>Jordan Veretout</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Josue_Casimir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Josue_Casimir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_D"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/260/943/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</age>
+        <alias>Casimir</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">54</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">62</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">82</statVitesse>
+        <rdfs:label>Josue Casimir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Kylian_Mbappe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Kylian_Mbappe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#buteur"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/231/747/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</age>
+        <alias>Mbappe</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</mauvaisPied>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99</statVitesse>
+        <rdfs:label>Kylian Mbappe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Club"/>
+        <ClubHasChampionnat rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#League_2"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Amir_Richardson"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Arthur_Desmas"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Check-Oumar_Diakite"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Christopher_Operi"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gautier_Lloris"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Josue_Casimir"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Oualid_EL_Hajjam"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Quentin_Cornette"/>
+        <URLImage>https://upload.wikimedia.org/wikipedia/fr/e/e6/Logo_Havre_AC_2012.svg</URLImage>
+        <rdfs:label>Le Havre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#League_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#League_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Championnat"/>
+        <ChampionnatHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <ChampionnatHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <rdfs:label>Ligue 1 Uber Eats</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#League_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#League_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Championnat"/>
+        <ChampionnatHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bordeaux"/>
+        <ChampionnatHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre"/>
+        <rdfs:label>Ligue 2 BKT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Lionel_Messi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Lionel_Messi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Argentine"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_D"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gauche"/>
+        <URLImage>https://cdn.sofifa.net/players/158/023/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</age>
+        <alias>Messi</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</gestesTechniques>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</mauvaisPied>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">93</statVitesse>
+        <rdfs:label>Lionel Messi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Logan_Delaurier-Chaubet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Logan_Delaurier-Chaubet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bordeaux"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_G"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gauche"/>
+        <URLImage>https://cdn.sofifa.net/players/256/843/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21</age>
+        <alias>Delaurier-Chaubet</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</mauvaisPied>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</statVitesse>
+        <rdfs:label>Logan Delaurier-Chaubet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Malcom_Bokele -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Malcom_Bokele">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bordeaux"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/262/709/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23</age>
+        <alias>Bokele</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">62</statVitesse>
+        <rdfs:label>Malcom Bokele</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Marco_Verratti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Marco_Verratti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Italie"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/199/556/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</age>
+        <alias>Verratti</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</gestesTechniques>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">85</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</statVitesse>
+        <rdfs:label>Marco Verratti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Maroc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Maroc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+        <URLImage>https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/langfr-225px-Flag_of_Morocco.svg.png</URLImage>
+        <rdfs:label>Maroc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Marquinhos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Marquinhos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bresil"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/207/865/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29</age>
+        <alias>Marquinhos</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</statVitesse>
+        <rdfs:label>Marquinhos</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Marvin_De_Lima -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Marvin_De_Lima">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bordeaux"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_G"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/271/305/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</age>
+        <alias>De Lima</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">63</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">63</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statVitesse>
+        <rdfs:label>Marvin De Lima</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Mattéo_Guendouzi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Mattéo_Guendouzi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</age>
+        <alias>Guendouzi</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</mauvaisPied>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">86</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">82</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83</statVitesse>
+        <rdfs:label>Mattéo Guendouzi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Neymar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Neymar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bresil"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_G"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/190/871/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31</age>
+        <alias>Neymar</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">93</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95</statVitesse>
+        <rdfs:label>Neymar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Norvege -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Norvege">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+        <URLImage>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/langfr-225px-Flag_of_Norway.svg.png</URLImage>
+        <rdfs:label>Norvège</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Club"/>
+        <ClubHasChampionnat rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#League_1"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Cengiz_Under"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Chancel_Mbemba"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Eric_Bailly"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Jonathan_Clauss"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Jordan_Veretout"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Mattéo_Guendouzi"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Rubén_Blanco"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Samuel_Gigot"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Valentin_Rongier"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#dimitri_payet"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#gonzalez_alvaro"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#jordan_amavi"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#leonardo_balerdi"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#pau_lopez"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#steve_mandanda"/>
+        <URLImage>https://upload.wikimedia.org/wikipedia/fr/archive/4/43/20200407190016%21Logo_Olympique_de_Marseille.svg</URLImage>
+        <rdfs:label>Olympique de Marseille</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Oualid_EL_Hajjam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Oualid_EL_Hajjam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Maroc"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_D"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/234/514/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31</age>
+        <alias>EL Hajjam</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</statVitesse>
+        <rdfs:label>Oualid EL Hajjam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Club"/>
+        <ClubHasChampionnat rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#League_1"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Achraf_Hakimi"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Danilo_Pereira"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Gianluigi_Donnarumma"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Kylian_Mbappe"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Lionel_Messi"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Marco_Verratti"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Marquinhos"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Neymar"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Sergio_Ramos"/>
+        <ClubHasPerson rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Vitinha"/>
+        <URLImage>https://upload.wikimedia.org/wikipedia/fr/thumb/8/86/Paris_Saint-Germain_Logo.svg/1200px-Paris_Saint-Germain_Logo.svg.png</URLImage>
+        <rdfs:label>Paris Saint Germain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Portugal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Portugal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Nationalite"/>
+        <URLImage>https://download.vikidia.org/vikidia/fr/images/thumb/a/ad/Drapeau_du_Portugal.svg/1200px-Drapeau_du_Portugal.svg.png</URLImage>
+        <rdfs:label>Portugal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Quentin_Cornette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Quentin_Cornette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Le_Havre"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_G"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/225/584/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</age>
+        <alias>Cornette</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79</statVitesse>
+        <rdfs:label>Quentin Cornette</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Rubén_Blanco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Rubén_Blanco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Espagne"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#gardien"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/211/101/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">27</age>
+        <alias>Rubén Blanco</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79</statVitesse>
+        <rdfs:label>Rubén Blanco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Samuel_Gigot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Samuel_Gigot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/219/581/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29</age>
+        <alias>Samuel Gigot</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statVitesse>
+        <rdfs:label>Samuel Gigot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Sergio_Ramos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Sergio_Ramos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Espagne"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/155/862/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37</age>
+        <alias>Sergio Ramos</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">72</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83</statVitesse>
+        <rdfs:label>Sergio Ramos</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Stian_Gregersen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Stian_Gregersen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Norvege"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bordeaux"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/216/730/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</age>
+        <alias>Gregerson</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75</statVitesse>
+        <rdfs:label>Stian Gregersen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Tom_Lacoux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Tom_Lacoux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Bordeaux"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_defensif_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/260/158/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21</age>
+        <alias>Lacoux</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">62</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">67</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68</statVitesse>
+        <rdfs:label>Tom Lacoux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Valentin_Rongier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Valentin_Rongier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/223/874/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28</age>
+        <alias>Rongier</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</mauvaisPied>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">76</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">66</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71</statVitesse>
+        <rdfs:label>Valentin Rongier</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#Vitinha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Vitinha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Portugal"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#PSG"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://cdn.sofifa.net/players/255/253/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23</age>
+        <alias>Vitinha</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</gestesTechniques>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">82</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">85</statVitesse>
+        <rdfs:label>Vitinha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Attaque"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>AT</initiales>
+        <rdfs:label>Attaquant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Attaque"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>AD</initiales>
+        <rdfs:label>Attaquant Droit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#attaquant_G">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Attaque"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>AG</initiales>
+        <rdfs:label>Attaquant Gauche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#avant_centre_D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#avant_centre_D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Attaque"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>AVD</initiales>
+        <rdfs:label>Avant Centre Droit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#avant_centre_G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#avant_centre_G">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Attaque"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>AVG</initiales>
+        <rdfs:label>Avant Centre Gauche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#buteur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#buteur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Attaque"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>BU</initiales>
+        <rdfs:label>Buteur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Defense"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>DC</initiales>
+        <rdfs:label>Défenseur Central</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Defense"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>DD</initiales>
+        <rdfs:label>Défenseur Droit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_G">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Defense"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>DG</initiales>
+        <rdfs:label>Défenseur Gauche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_lateral_D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_lateral_D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Defense"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>DLD</initiales>
+        <rdfs:label>Défenseur latéral droit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_lateral_G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_lateral_G">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Defense"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>DLG</initiales>
+        <rdfs:label>Défenseur latéral gauche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#dimitri_payet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#dimitri_payet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_offensif_C"/>
+        <playerHasStrongFoot rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Droit"/>
+        <URLImage>https://fifastatic.fifaindex.com/FIFA23/players/177388.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</age>
+        <alias>PAYET</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</statEndurance>
+        <statGeneral rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">82</statGeneral>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">84</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">70</statVitesse>
+        <rdfs:label>Dimitri Payet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#gardien -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#gardien">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Defense"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>G</initiales>
+        <rdfs:label>Gardien</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#gonzalez_alvaro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#gonzalez_alvaro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Espagne"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C"/>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">82</statEndurance>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">64</statVitesse>
+        <rdfs:label>Alvaro Gonzalez</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#jordan_amavi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#jordan_amavi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_D"/>
+        <URLImage>https://cdn.sofifa.net/players/219/681/23_120.png</URLImage>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29</age>
+        <alias>Amavi</alias>
+        <gestesTechniques rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</gestesTechniques>
+        <mauvaisPied rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</mauvaisPied>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">85</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statEndurance>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">88</statVitesse>
+        <rdfs:label>Jordan Amavi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#leonardo_balerdi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#leonardo_balerdi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Argentine"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#defenseur_C"/>
+        <rdfs:label>Leonardo Balerdi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Milieu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>MC</initiales>
+        <rdfs:label>Milieu Central</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Milieu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>MD</initiales>
+        <rdfs:label>Milieu droit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_G">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Milieu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>MG</initiales>
+        <rdfs:label>Milieu gauche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_defensif_C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_defensif_C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Milieu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>MDC</initiales>
+        <rdfs:label>Milieu défensif central</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_offensif_C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#milieu_offensif_C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Milieu"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Poste"/>
+        <initiales>MOC</initiales>
+        <rdfs:label>Milieu offensif central</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#pau_lopez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#pau_lopez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Espagne"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#gardien"/>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">81</statEndurance>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">77</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</statVitesse>
+        <rdfs:label>Pau Lopez</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaeta/ontologies/2023/foot#steve_mandanda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaeta/ontologies/2023/foot#steve_mandanda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#Player"/>
+        <HasNationality rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#France"/>
+        <PersonHasClub rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#OM"/>
+        <PlayerHasPost rdf:resource="http://www.semanticweb.org/gaeta/ontologies/2023/foot#gardien"/>
+        <statDefense rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">57</statDefense>
+        <statDribble rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</statDribble>
+        <statEndurance rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statEndurance>
+        <statPasse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">82</statPasse>
+        <statTir rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</statTir>
+        <statVitesse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">86</statVitesse>
+        <rdfs:label>Steve Mandanda</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

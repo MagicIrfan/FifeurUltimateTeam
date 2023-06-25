@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "EASPORTS15";
+    src: url(../assets/fonts/EASports.ttf);
+}
+
+@media screen and (max-width:566px) {
+    .title{
+        font-size: 20px;
+    }
+    .search-player-container{
+        width: 80%;
+    }
+}
+@media screen and (min-width:567px) and (max-width:835px ) {
+    .title{
+        font-size: 30px;
+    }
+    .search-player-container{
+        width: 65%;
+    }
+}
+@media screen and (min-width:836px) and (max-width:1025px) {
+    .title{
+        font-size: 45px;
+    }
+    .search-player-container{
+        width: 55%;
+    }
+}
+@media screen and (min-width:1026px){
+    .title{
+        font-size: 60px;
+    }
+    .search-player-container{
+        width: 45%;
+    }
+}
+@media screen and (min-width:1400px){
+    .title{
+        font-size: 60px;
+    }
+    .search-player-container{
+        width: 35%;
+    }
+}
+
+.title
+{
+    text-align: center;
+    margin-top: 3rem;
+    color:white;
+    font-family: "EASPORTS15", "Saira Semi Condensed", sans-serif;
+}
+
+select{
+    background-color: white;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-player{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.input-element{
+    display: flex;
+    flex-direction: column;
+}
+.input-element:not(.input-element:first-child){
+    margin-top: 1em;
+}
+
+
+label{
+    margin-bottom: 0.3em;
+    color:white;
+    font-weight: bold;
+}
+
+.input-check{
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="number"]{
+    width: 75%;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.check-container{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+}
+
+input[type="checkbox"]{
+    height: 3.2em;
+    width: 3.2em;
+}
+
+input[type="number"]:focus{
+    outline: none;/*3px solid #0275d8;*/
+}
+
+input:disabled,.add1:disabled,.minus1:disabled{
+    background-color: #aaaa;
+}
+
+.button{
+    width: 6rem;
+}
+
+.input-element input[type="number"],.input-btn{
+    padding:.5em;
+    font-size:1.2rem;
+    text-align:center;
+    font-weight:900;
+    /*background:white;*/
+    border:1px solid #aaa;
+}
+
+.input-btn{
+    width:50px;
+}
+
+.input-element input[type="number"]{
+    border-left:none;
+    border-right:none;
+}
+
+button{
+    cursor: pointer;
+}
